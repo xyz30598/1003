@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>風險監控燈號｜欣銓 3264 戰情室</title>
+  <meta name="description" content="欣銓逆向定價、關鍵因子紅黃綠燈與出場條件。">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="risk">
+<header class="nav" id="siteNav"></header>
+
+<main>
+  <div class="wrap hero small">
+    <div class="eyebrow">風險</div>
+    <h1>風險監控燈號</h1>
+    <p class="lead">價格是否透支了未來的成長？</p>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="card" style="margin-bottom:36px"><h3>一句話結論</h3><p class="sub" id="oneLine"></p><div class="grid g4" id="rateGrid"></div></div>
+      <h3 style="margin:0 0 12px">逆向定價：要讓現價合理，需要多少獲利？</h3>
+      <div class="table-wrap"><table id="revTable"></table></div>
+      <div class="banner" id="q3Line"></div>
+      <h3 style="margin:36px 0 12px">反向財務排雷</h3>
+      <div class="table-wrap"><table id="flagTable"></table></div>
+      <h3 style="margin:36px 0 12px">四大關鍵因子</h3>
+      <div class="grid g2" id="factors"></div>
+      <div class="card" style="margin-top:16px">
+        <h3>何時該果斷出場？</h3>
+        <p class="sub">下列任兩項成立，代表市場過度樂觀的預期破滅。</p>
+        <ol class="list" id="exits"></ol>
+      </div>
+      <p class="crumb"><a href="news.html">下一頁：近期新聞 ›</a></p>
+    </div>
+  </section>
+</main>
+
+<footer id="siteFooter"></footer>
+<script src="js/loader.js" data-next="js/app.js"></script>
+</body>
+</html>

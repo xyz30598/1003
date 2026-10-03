@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>試算工具｜欣銓 3264 戰情室</title>
+  <meta name="description" content="輸入買進價，試算欣銓的年化報酬與風險。">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="calculator">
+<header class="nav" id="siteNav"></header>
+
+<main>
+  <div class="wrap hero small">
+    <div class="eyebrow">試算</div>
+    <h1>試算工具</h1>
+    <p class="lead">輸入你的買進價，看風險與報酬。</p>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="calc">
+        <div class="card">
+          <h3>你的條件</h3>
+          <p class="sub">預設值取自報告，可自行調整。</p>
+          <div class="field"><label for="inPrice">買進價（元）</label><input id="inPrice" type="number" min="1" step="0.5"></div>
+          <div class="field"><label for="inScen">獲利情境</label><select id="inScen"></select></div>
+          <div class="field"><label for="inPE">未來合理本益比 <b id="peVal"></b></label><input id="inPE" type="range" min="8" max="30" step="0.5"></div>
+          <div class="field"><label for="inYears">持有年數 <b id="yrVal"></b></label><input id="inYears" type="range" min="1" max="5" step="1"></div>
+        </div>
+        <div class="card">
+          <h3>試算結果</h3>
+          <p class="sub" id="calcSub"></p>
+          <div class="result" id="calcResult"></div>
+          <div class="verdict" id="calcVerdict"></div>
+          <p class="chart-note">※ 以「2027E EPS × 未來本益比」推算未來股價，不含股利，僅供學習。</p>
+        </div>
+      </div>
+      <p class="crumb"><a href="risk.html">下一頁：風險監控燈號 ›</a></p>
+    </div>
+  </section>
+</main>
+
+<footer id="siteFooter"></footer>
+<script src="js/loader.js" data-next="js/app.js"></script>
+</body>
+</html>

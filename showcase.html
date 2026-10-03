@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>深色展示｜欣銓 3264 戰情室</title>
+  <meta name="description" content="拉絲鋁合金與玻璃質感的深色展示頁。">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/showcase.css">
+</head>
+<body data-page="showcase">
+<header class="nav" id="siteNav"></header>
+
+<main>
+  <section class="s-hero">
+    <div class="s-wrap">
+      <div class="s-eyebrow" id="eyebrow"></div>
+      <h1>看穿價格。</h1>
+      <p class="s-sub">一塊鋁，一片玻璃，一個結論：好公司，但現在偏貴。</p>
+
+      <div class="stage" id="stage">
+        <div class="slab" aria-hidden="true">
+          <span class="flare"></span>
+          <span class="rim"></span>
+          <div class="glass">
+            <div class="g-top"><span class="g-label">報告當日股價</span><span class="g-tag" id="gTag"></span></div>
+            <div class="g-price" id="gPrice"></div>
+            <div class="g-bars" id="gBars"></div>
+            <div class="g-foot" id="gFoot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="s-wrap">
+      <div class="specs rv">
+        <div class="spec"><div class="k">本益比（TTM）</div><div class="v" id="sPE"></div><div class="d" id="sPEn"></div></div>
+        <div class="spec"><div class="k">Q2 毛利率</div><div class="v" id="sGM"></div><div class="d" id="sGMn"></div></div>
+        <div class="spec"><div class="k" id="sEPSk"></div><div class="v" id="sEPS"></div><div class="d" id="sEPSn"></div></div>
+        <div class="spec"><div class="k">技術防守線</div><div class="v" id="sStop"></div><div class="d">跌破代表熱錢退潮</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-cta rv">
+    <div class="s-wrap">
+      <h2>想看細節？</h2>
+      <a class="btn primary" href="financials.html">進入戰情室</a>
+      <a class="btn ghost" href="calculator.html">試算我的報酬</a>
+    </div>
+  </section>
+</main>
+
+<footer id="siteFooter"></footer>
+<noscript><p style="text-align:center;padding:24px">請開啟瀏覽器的 JavaScript 以顯示內容。</p></noscript>
+<script src="js/loader.js" data-next="js/app.js js/showcase.js"></script>
+</body>
+</html>

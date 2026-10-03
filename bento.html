@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>網格總覽｜欣銓 3264 戰情室</title>
+  <meta name="description" content="非對稱網格版面的欣銓重點數字總覽。">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bento.css">
+</head>
+<body data-page="bento">
+<header class="nav" id="siteNav"></header>
+
+<main class="b-wrap">
+  <div class="b-grid">
+    <div class="b-title rv">
+      <span class="eb" id="eyebrow"></span>
+      <h1>好公司，<br>價格偏貴。</h1>
+      <p id="bLead"></p>
+    </div>
+
+    <article class="tile gloss t-price rv">
+      <span class="tag" id="bTag"></span>
+      <div><div class="k">報告當日股價</div><div class="big" id="bPrice"></div></div>
+      <div class="note" id="bDate"></div>
+    </article>
+
+    <article class="tile matte t-pe rv">
+      <div><div class="k">本益比（TTM）</div><div class="big" id="bPE"></div></div>
+      <div>
+        <div class="pe-row"><div class="top"><span>現在</span><b id="bPENow"></b></div><div class="track"><div class="fill" id="fNow" style="background:var(--red)"></div></div></div>
+        <div class="pe-row"><div class="top"><span>歷史中位數</span><b id="bPEMid"></b></div><div class="track"><div class="fill" id="fMid" style="background:var(--green)"></div></div></div>
+      </div>
+    </article>
+
+    <article class="tile matte t-eps rv">
+      <div><div class="k" id="bEpsTitle"></div></div>
+      <div class="bars" id="bBars" style="margin-bottom:26px"></div>
+    </article>
+
+    <article class="tile gloss blue t-star rv">
+      <div class="k">綜合評級</div>
+      <div class="stars" id="bStars"></div>
+      <div class="note" id="bRateNote"></div>
+    </article>
+
+    <article class="tile matte t-gm rv">
+      <div class="k">Q2 毛利率</div>
+      <div class="big" id="bGM"></div>
+      <div class="note" id="bGMn"></div>
+    </article>
+
+    <article class="tile matte t-stop rv">
+      <div class="k">技術防守線</div>
+      <div class="big" id="bStop"></div>
+      <div class="note" id="bIdeal"></div>
+    </article>
+
+    <article class="tile matte t-go rv">
+      <span class="lead">想看細節？</span>
+      <a class="go-link" href="financials.html">財報</a>
+      <a class="go-link" href="valuation.html">估值</a>
+      <a class="go-link" href="calculator.html">試算</a>
+      <a class="go-link" href="risk.html">風險</a>
+      <a class="go-link" href="news.html">新聞</a>
+    </article>
+  </div>
+</main>
+
+<footer id="siteFooter"></footer>
+<noscript><p style="text-align:center;padding:24px">請開啟瀏覽器的 JavaScript 以顯示內容。</p></noscript>
+<script src="js/loader.js" data-next="js/app.js js/bento.js"></script>
+</body>
+</html>

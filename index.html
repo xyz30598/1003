@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>欣銓 3264 股票戰情室</title>
+  <meta name="description" content="欣銓科技（3264）財報、估值、風險監控、新聞與投資價值分析戰情室。">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+<body data-page="home">
+<header class="nav" id="siteNav"></header>
+
+<main>
+  <!-- 首屏 -->
+  <section class="l-hero">
+    <div class="l-wrap">
+      <div class="l-eyebrow" id="eyebrow"></div>
+      <h1>好公司。<br><em>價格呢？</em></h1>
+      <p class="l-sub">財報、估值與風險，用最少的畫面講清楚。</p>
+      <div class="l-cta">
+        <a class="btn primary" href="financials.html">進入戰情室</a>
+        <a class="btn ghost" href="calculator.html">試算我的報酬</a>
+      </div>
+      <div class="l-stamp" id="lStamp"></div>
+
+      <!-- 極簡 UI 展示 -->
+      <div class="mock" aria-hidden="true">
+        <div class="mock-bar"><i></i><i></i><i></i></div>
+        <div class="mock-body">
+          <div class="mock-main">
+            <div class="mock-label">報告當日股價</div>
+            <div class="mock-price" id="mPrice"></div>
+            <span class="mock-tag">謹慎觀望 · 逢高減碼</span>
+          </div>
+          <div class="mock-side">
+            <div class="bar-row"><div class="top"><span>現在本益比</span><b id="mPE"></b></div><div class="track"><div class="fill" id="fPE" style="background:var(--red)"></div></div></div>
+            <div class="bar-row"><div class="top"><span>歷史中位數</span><b id="mHist"></b></div><div class="track"><div class="fill" id="fHist" style="background:var(--green)"></div></div></div>
+            <div class="bar-row"><div class="top"><span>Q2 毛利率</span><b id="mGM"></b></div><div class="track"><div class="fill" id="fGM" style="background:var(--blue)"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 巨大數字 -->
+  <section class="l-stats">
+    <div class="l-wrap" id="statList"></div>
+  </section>
+
+  <!-- 主題 -->
+  <section class="l-feat rv"><div class="l-wrap">
+    <h2>財報。</h2><p>營收、毛利率、EPS 走勢，一眼看完。</p><a class="link" href="financials.html">查看財報</a>
+  </div></section>
+  <section class="l-feat rv"><div class="l-wrap">
+    <h2>估值。</h2><p>現在的價格，到底貴不貴？從歷史位置到建倉價位。</p><a class="link" href="valuation.html">查看估值</a>
+  </div></section>
+  <section class="l-feat rv"><div class="l-wrap">
+    <h2>試算。</h2><p>輸入你的買進價，立刻算出年化報酬。</p><a class="link" href="calculator.html">開始試算</a>
+  </div></section>
+  <section class="l-feat rv"><div class="l-wrap">
+    <h2>風險。</h2><p>關鍵因子與紅黃綠燈，告訴你何時該退場。</p><a class="link" href="risk.html">查看風險</a>
+  </div></section>
+  <section class="l-feat rv"><div class="l-wrap">
+    <h2>新聞。</h2><p>近期報導整理，附原文連結。</p><a class="link" href="news.html">閱讀新聞</a>
+  </div></section>
+
+  <section class="l-end rv"><div class="l-wrap">
+    <h2>從這裡開始。</h2>
+    <a class="btn primary" href="financials.html">進入戰情室</a>
+  </div></section>
+</main>
+
+<footer id="siteFooter"></footer>
+<noscript><p style="text-align:center;padding:24px">請開啟瀏覽器的 JavaScript 以顯示內容。</p></noscript>
+<script src="js/loader.js" data-next="js/app.js js/landing.js"></script>
+</body>
+</html>
